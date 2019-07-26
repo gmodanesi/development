@@ -1,0 +1,55 @@
+
+
+<ion-content>
+    <ion-card *ngIf="testo">
+        <ion-card-content >
+            {{testo}}
+            
+              </ion-card-content>
+    </ion-card>
+  <ion-card *ngFor="let file of files | async ">
+  <ion-card-header>
+{{file.created | date: 'medium'}}
+
+  </ion-card-header>
+  
+  <ion-card-content>
+    <ion-button block icon-left outline  (click)="viewFile(file.url)">
+      <ion-icon name="eye"></ion-icon>
+      {{file.fullPath}}
+    </ion-button>
+    <ion-button  block icon-only outline color="danger" (click)="deleteFile(file)">
+        <ion-icon name="trash"></ion-icon>
+      
+      </ion-button>
+  </ion-card-content>
+
+  </ion-card>
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button color="primary" (click)="addFile()">
+    <ion-icon name="cloud-upload"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-button color="primary" (change)="onUploadChangeFunct($event)">
+    
+    <!--<input type="file"  (change)="onUploadChange($event)" accept=".png, .jpg, .jpeg, .pdf"/>-->
+    <input type="file" accept="image/*" capture="camera" (change)="onUploadChangeFunct($event)" class="fileInput" id="fInput"/>
+    <ion-label for="fInput" icon-only ion-button>
+        <ion-icon name="document"></ion-icon>
+    </ion-label>
+
+   
+  
+  </ion-fab-button>
+  <ion-fab-button color="primary" (click)="callFunction()">
+      <ion-icon name="print"></ion-icon>
+    </ion-fab-button>
+  
+
+
+
+
+ 
+  
+  
+</ion-fab>
+</ion-content>

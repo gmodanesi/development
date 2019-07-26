@@ -1,0 +1,9 @@
+{
+  "name": "fismicApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "7523bafc",
+  "-": "g"
+}

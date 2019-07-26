@@ -1,0 +1,17 @@
+
+<ion-app>
+    <!--<ion-router-outlet></ion-router-outlet>-->
+  
+  
+
+  
+<app-header *ngIf="router.url.indexOf('/login')==-1">
+
+</app-header>
+
+<ion-content>
+        
+    <ion-router-outlet ></ion-router-outlet>
+</ion-content>
+
+</ion-app>
