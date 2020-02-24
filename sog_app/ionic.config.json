@@ -1,0 +1,8 @@
+{
+  "name": "sog_app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "94faab0f"
+}
