@@ -36,7 +36,7 @@
     "@ionic/lab": "^1.0.24",
     "@types/crypto-js": "^3.1.43",
     "angularx-social-login": "^1.2.7",
-    "aws-sdk": "^2.480.0",
+    "aws-sdk": "^2.814.0",
     "cordova": "^9.0.0",
     "cordova-android": "8.0.0",
     "cordova-browser": "6.0.0",
